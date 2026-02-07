@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Commande en ligne</title>
+    </head>
+    <body>
+        <form action="" method="post">
+            <h1>Commande en ligne</h1>
+            <fieldset>
+                <legend>Etat civil</legend>
+                <p>Civilité : </p>
+                <ul>
+                    <li><label for="mlle"><input type="radio" id="mlle" value="mademoiselle" name="civilite" required> Mlle</label></li>
+                    <li><label for="mme"><input type="radio" id="mme" value="madame" name="civilite"> Madame</label></li>
+                    <li><label for="m"><input type="radio" id="m" value="monsieur" name="civilite"> Monsieur</label></li>
+                </ul>
+                <p><label for="prenom">Prénom : <input type="text" id="prenom" name="prenom" required></label></p>
+                <p><label for="nom">Nom : <input type="text" id="nom" name="nom" required></label></p>
+
+            </fieldset>
+            <fieldset>
+                <legend>Adresse de facturation</legend>
+                <p><label for="adresse_facturation">Adresse : <input type="text" id="adresse_facturation" name="addresse" required></label></p>
+                <p><label for="ville_facturation">Ville : <input type="text" id="ville_facturation" name="ville" required></label></p>
+                <p><label for="code_facturation">Code postal : <input type="text" id="code_facturation" name="postal" required></label></p>
+                <p><label for="pays_facturation">Pays : <select id="pays_facturation" name="pays_facturation" required>
+                    <option value="" selected="selected">Choisissez un pays</option>
+                    <option value="fr">France</option>
+                    <option value="it">Italie</option>
+                    <option value="es">Espagne</option>
+                </select></label></p>
+      
+            </fieldset>
+            <fieldset>
+                <legend>Adresse de livraison</legend>
+                <p><label for="adresse_livraison">Adresse : <input type="text" id="adresse_livraison" name="adresse_livraison" required></label></p>
+                <p><label for="ville_livraison">Ville : <input type="text" id="ville_livraison" name="ville_livraison" required></label></p>
+                <p><label for="postal_livraison">Code postal : <input type="text" id="postal_livraison" name="postal_livraison" required></label></p>
+                <p><label for="pays_livraison">Pays : <select id="pays_livraison" name="pays_livraison" required>
+                    <option value="" selected="selected">Choisissez un pays</option>
+                    <option value="fr">France</option>
+                    <option value="it">Italie</option>
+                    <option value="es">Espagne</option>
+                </select></label></p>
+            </fieldset>
+              <p><button type="submit">Envoyer</button></p>
+        </form>
+    </body>
+</html>
